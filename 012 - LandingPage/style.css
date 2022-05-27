@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS for Navbar */
+header {
+  background-color: #fff;
+  /* box-shadow: 0 4px 10px rgb(0 0 0 / 8%); */
+  box-shadow: rgb(0 0 0 / 45%) 0px 25px 20px -20px;
+  top: 0px;
+  position: sticky;
+  z-index: 50;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 15px 50px;
+}
+.burgurMenu {
+  display: none;
+}
+.burgurMenu:hover{
+  cursor: pointer;
+}
+.burgurMenu i {
+  font-size: 30px;
+  position: absolute;
+  top: 23px;
+  right: 32px;
+}
+.cart a i {
+  font-size: 30px;
+  color: black;
+  top: 23px;
+  right: 50px;
+  margin: 0px 10px;
+}
+.cart a i:hover {
+  cursor: pointer;
+  color: gray;
+}
+.navbar .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .left img {
+  border: none;
+  border-radius: 50%;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+.navbar .left h1 {
+  margin: 0px 5px;
+  font-weight: bold;
+}
+.navbar .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar .right ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px 10px;
+}
+.navbar .right ul li {
+  list-style: none;
+  margin: 0px 18px;
+}
+.navbar .right ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+}
+.navbar .right ul li a:hover {
+  color: gray;
+}
+
+/* CSS for Homepage */
+.homePage {
+  position: relative;
+}
+.homePage img {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+/* Scroll to top button CSS */
+.to-top{
+  position: fixed;
+  bottom: 25px;
+  right: 32px;
+  height: 54px;
+  width: 50px;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.to-top a{
+  text-decoration: none;
+}
+.to-top i{
+  font-size: 54px;
+  color: rgb(4, 4, 70);
+  transition: all 0.5s;
+}
+.to-top i:hover{
+  cursor: pointer;
+  transform: scale(1.1)
+}
+.to-top.active{
+  opacity: 1;
+  pointer-events: auto;
+  bottom: 30px;
+}
+/* CSS for why class */
+.why {
+  width: 100%;
+  padding: 30px 200px;
+  text-align: center;
+  margin: 40px 0px;
+}
+.why h1 {
+  margin: 30px 0px;
+  font-size: 40px;
+}
+.why #desc {
+  color: gray;
+  font-size: 25px;
+}
+.why .steps {
+  margin: 80px 0px;
+}
+.why .step1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 40px 0px;
+}
+.why .step1 .left {
+  text-align: left;
+  padding: 0px 30px;
+}
+.why .step1 .left label {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 20px;
+}
+.why .step1 .left h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 10px 0px;
+}
+.why .step1 .left span {
+  color: gray;
+}
+.why .step1 .right img {
+  height: 200px;
+}
+.why .step2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 40px 0px;
+}
+.why .step2 .right {
+  text-align: left;
+  padding: 0px 30px;
+}
+.why .step2 .right label {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 20px;
+}
+.why .step2 .right h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 10px 0px;
+}
+.why .step2 .right span {
+  color: gray;
+}
+.why .step2 .left img {
+  height: 200px;
+}
+.why .step3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  margin: 40px 0px;
+}
+.why .step3 .left {
+  text-align: left;
+  padding: 0px 30px;
+}
+.why .step3 .left label {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 20px;
+}
+.why .step3 .left h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 10px 0px;
+}
+.why .step2 .left span {
+  color: gray;
+}
+.why .step3 .right img {
+  height: 200px;
+}
+/* CSS for services section */
+.services {
+  text-align: center;
+}
+.services h1 {
+  margin: 10px 0px;
+}
+.services #desc2 {
+  color: gray;
+  font-size: 20px;
+}
+.services .cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin: 50px 0px;
+}
+.services .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 10px;
+  height: 650px;
+  width: 350px;
+}
+.services .cards .card h2 {
+  margin: 15px 0px;
+}
+.services .cards .card .fspan {
+  color: gray;
+}
+.services .cards .card label {
+  margin-top: 30px;
+  font-size: 20px;
+}
+.services .cards .card button {
+  border: none;
+  border-radius: 35px;
+  height: 50px;
+  width: 180px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 15px 0px;
+  transition: all 0.3s ease-in;
+}
+.services .cards .card button:hover {
+  cursor: pointer;
+  background-color: rgb(22, 22, 177);
+  transform: scale(1.1);
+}
+.services .cards .card .hostingInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 30px 0px;
+  padding: 10px 30px;
+  text-align: left;
+}
+.services .cards .card .hostingInfo .info {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.services .cards .card a {
+  text-decoration: none;
+  color: blue;
+}
+/* CSS for DomainSection */
+.domainSection {
+  text-align: center;
+  margin: 20px 0px;
+  padding: 0px 200px;
+  background-color: rgb(227, 222, 222);
+  padding: 50px;
+}
+.domainSection h1 {
+  margin: 10px 0px;
+}
+.domainSection #desc3 {
+  color: gray;
+}
+.takeDomainName {
+  margin: 30px 0px;
+}
+.domainSection .takeDomainName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.domainSection .takeDomainName input {
+  height: 40px;
+  width: 600px;
+  border: none;
+  border-radius: 40px;
+  border: 1px solid gray;
+  padding: 10px;
+  outline: none;
+  transition: all 0.2s ease-in;
+}
+.domainSection .takeDomainName input:focus {
+  box-shadow: 0 0 2pt 1pt blue;
+}
+.domainSection .takeDomainName button {
+  border: none;
+  border-radius: 35px;
+  height: 50px;
+  width: 180px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 15px 0px;
+  transition: all 0.3s ease-in;
+}
+.domainSection .takeDomainName button:hover {
+  cursor: pointer;
+  background-color: rgb(48, 48, 182);
+  transform: scale(1.1);
+}
+/* CSS for contact section */
+.contact {
+  text-align: center;
+  padding: 50px 200px;
+}
+.contact h1 {
+  margin: 10px 0px;
+}
+.contact #desc4 {
+  color: gray;
+}
+.contact .contactForm {
+  margin: 50px 0px;
+  text-align: center;
+}
+.contact .contactForm div {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .contactForm div input {
+  height: 40px;
+  width: 600px;
+  border: none;
+  border-radius: 40px;
+  border: 1px solid gray;
+  padding: 10px;
+  outline: none;
+  transition: all 0.2s ease-in;
+  width: 100%;
+}
+.contact .contactForm div input:focus {
+  box-shadow: 0 0 2pt 1pt blue;
+}
+.contact .contactForm div label {
+  text-align: left;
+  width: 100%;
+  color: gray;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 5px 0px;
+  text-transform: capitalize;
+}
+.contact .contactForm div textarea {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  transition: all 0.2s ease-in;
+}
+.contact .contactForm div textarea:focus {
+  box-shadow: 0 0 2pt 1pt blue;
+}
+.contact .contactForm button {
+  border: none;
+  border-radius: 35px;
+  height: 50px;
+  width: 180px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 15px 0px;
+  transition: all 0.3s ease-in;
+}
+.contact .contactForm button:hover {
+  cursor: pointer;
+  background-color: rgb(48, 48, 182);
+  transform: scale(1.1);
+}
+/* CSS for footer */
+footer {
+  width: 100%;
+  background: #111;
+  padding: 50px 400px;
+}
+footer .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
+}
+footer .content .left {
+  display: flex;
+  flex-direction: column;
+}
+footer .content .left .upper {
+  display: flex;
+  flex-direction: row;
+}
+footer .content .left .bottom {
+  flex-direction: row;
+  margin: 50px 0px;
+}
+footer .content .left .bottom span {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+footer .content .left h1 {
+  color: white;
+  margin: 0px 5px;
+}
+footer .content .right {
+  display: flex;
+  flex-direction: column;
+}
+footer .content .right h4 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+footer .content .right .menuLists {
+  margin: 10px 0px;
+}
+footer .content .right div {
+  margin: 2px 0px;
+}
+footer .content .right div a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* CSS Code for Login page and Sign up page */
+.form {
+  margin: 50px 0px;
+  text-align: center;
+}
+.form div {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form div input {
+  height: 40px;
+  width: 600px;
+  border: none;
+  border-radius: 40px;
+  border: 1px solid gray;
+  padding: 10px;
+  outline: none;
+  transition: all 0.2s ease-in;
+  width: 100%;
+}
+.form div input:focus {
+  box-shadow: 0 0 2pt 1pt blue;
+}
+.form div label {
+  text-align: left;
+  width: 100%;
+  color: gray;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 5px 0px;
+  text-transform: capitalize;
+}
+.form button {
+  border: none;
+  border-radius: 35px;
+  height: 50px;
+  width: 180px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 15px 0px;
+  transition: all 0.3s ease-in;
+}
+.form button:hover {
+  cursor: pointer;
+  background-color: rgb(48, 48, 182);
+  transform: scale(1.1);
+}
+
+/* CSS code for Cart page */
+.cartContent {
+  height: 100vh;
+  text-align: center;
+  padding: 50px;
+}
+.cartContent h1 {
+  margin: 50px 0px;
+}
+.cartContent span {
+  color: gray;
+}
+
+/* Let's move to build our webite responsive */
+@media screen and (max-width: 1100px) {
+  .burgurMenu {
+    display: block;
+  }
+  header {
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar .left {
+    position: absolute;
+    left: 14px;
+    top: 18px;
+  }
+  .navbar .right ul {
+    display: none;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 61vh;
+    background-color: white;
+    margin: 35px 0px;
+  }
+  .navbar .right ul li {
+    margin: 30px 0px;
+  }
+  .cart a i {
+    font-size: 30px;
+    position: absolute;
+    top: 23px;
+    right: 50px;
+    margin: 0px 30px;
+  }
+  .homePage img {
+    max-width: 100%;
+    height: auto;
+  }
+  .why {
+    padding: 15px 10px;
+  }
+  .why h1{
+    font-size: 2em;
+  }
+  .why .steps .step1 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .why .steps .step1 .left {
+    text-align: center;
+  }
+  .why .steps .step1 .right img {
+    margin: 20px 0px;
+  }
+  .why .steps .step2 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .why .steps .step2 .right {
+    text-align: center;
+  }
+  .why .steps .step2 .left img {
+    margin: 20px 0px;
+  }
+  .why .steps .step3 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .why .steps .step3 .left {
+    text-align: center;
+  }
+  .why .steps .step3 .right img {
+    margin: 20px 0px;
+  }
+  .services .cards {
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+  .services .cards .card {
+    margin: 10px 10px;
+    width: 360px;
+  }
+  .domainSection .takeDomainName input {
+    width: 300px;
+  }
+  .contact {
+    padding: 15px 25px;
+  }
+  footer {
+    padding: 25px 30px;
+  }
+  footer .content {
+    justify-content: space-around;
+  }
+}

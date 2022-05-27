@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HostingX - Sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="left">
+                <img src="/materials/logo.png" alt="Logo" height="40px">
+                <h1>HostingX</h1>
+            </div>
+            <div class="right">
+                <ul id="links">
+                    <li><a id="link" href="/index.html">Home</a></li>
+                    <li><a id="link" href="/index.html">About</a></li>
+                    <li><a id="link" href="/index.html">Services</a></li>
+                    <li><a id="link" href="/index.html">Domain</a></li>
+                    <li><a id="link" href="/index.html">Contact Us</a></li>
+                    <li><a id="link" href="/login.html">Login</a></li>
+                    <li><a id="link" href="/signup.html">Sign up</a></li>
+                </ul>
+                <div class="cart" id="cart">
+                    <a id="link" href="/cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+                <div class="burgurMenu" id="burgurMenu" onclick="action()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contact" id="contact">
+        <h1>Sign up to HostingX</h1>
+
+        <div class="form">
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter your Name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your Email" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your Password" required>
+                </div>
+                <div>
+                    <label for="cpassword">Confirm Password</label>
+                    <input type="password" placeholder="Enter your Confirm Password" required>
+                </div>
+                <button>Sign up</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="content">
+            <div class="left">
+                <div class="upper">
+                    <img src="/materials/logo.png" alt="Logo" height="40px">
+                    <h1 id="name">HostingX</h1>
+                </div>
+                <div class="bottom">
+                    <span>© 2022 HostingX</span>
+                </div>
+            </div>
+            <div class="right">
+                <h4>Menus</h4>
+                <div class="menuLists">
+                    <div>
+                        <a href="/index.html">Home</a>
+                    </div>
+                    <div>
+                        <a href="/login.html">Login</a>
+                    </div>
+                    <div>
+                        <a href="/signup.html">Sign up</a>
+                    </div>
+                    <div>
+                        <a href="/cart.html">Your Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/dbe8e1aeca.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
