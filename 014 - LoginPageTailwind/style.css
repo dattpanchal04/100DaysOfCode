@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.card{
+    background-image: linear-gradient( 68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2% );
+}
+@tailwind utilities;

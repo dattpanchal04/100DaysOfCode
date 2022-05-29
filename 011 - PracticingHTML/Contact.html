@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+
+    <!-- HTML Form -->
+    <form action="/">
+      <label for="name">Your name</label>
+      <input type="text" placeholder="Enter your name" required />
+      <br />
+
+      <label for="name">Your email</label>
+      <input type="email" placeholder="Enter your email" required />
+      <br />
+
+      <label for="password">Your password</label>
+      <input type="password" placeholder="Enter your password" required />
+      <br />
+
+      <label for="number">Your phone number</label>
+      <input type="number" placeholder="Enter your phone number" required />
+      <br />
+
+      <label for="gender">Select your gender : </label>
+      <input type="radio" id="gender" name="gender" value="male" /> Male
+      <input type="radio" id="gender" name="gender" value="female" /> Female
+      <input type="radio" id="gender" name="gender" value="other" /> Other
+      <!-- Also you choose checkbox -->
+      <br />
+
+      <label for="place">Where are you from ?</label>
+      <select name="place" id="place">
+        <option value="earth">Earth</option>
+        <option value="Mars">Mars</option>
+        <option value="Jupyter">Jupyter</option>
+      </select>
+      <br />
+
+      <textarea
+        name="about"
+        id="about"
+        cols="30"
+        rows="10"
+        placeholder="Tell us about yourself!"
+      ></textarea>
+      <br />
+      <button class="btn">Submit</button>
+    </form>
+  </body>
+</html>

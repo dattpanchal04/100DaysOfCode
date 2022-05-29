@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HostingX - Your cart</title>
+    <title>HostingSnap - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,7 +14,7 @@
         <nav class="navbar" id="navbar">
             <div class="left">
                 <img src="/materials/logo.png" alt="Logo" height="40px">
-                <h1>HostingX</h1>
+                <h1>HostingSnap</h1>
             </div>
             <div class="right">
                 <ul id="links">
@@ -35,21 +35,37 @@
             </div>
         </nav>
     </header>
-    <div class="cartContent">
-        <h1>Your cart <i class="fas fa-shopping-cart"></i></h1>
-        <span><i class="fas fa-cart-plus"></i></span> <br>
-        <br>
-        <span>Oops! Your cart is empty right now. Please add something in your cart.</span>
+
+    <div class="contact" id="contact">
+        <h1>Login to HostingSnap</h1>
+
+        <div class="form">
+            <form>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                </div>
+                <div id="forgotPassword"><a href="/fogotPassword.html">Forgot password ?</a></div> <br>
+                <button>Login</button>
+                <div id="createAccount"><span>No account ? <a href="/signup.html">Create account</a></span></div> <br>
+            </form>
+        </div>
     </div>
+    
+
     <footer>
         <div class="content">
             <div class="left">
                 <div class="upper">
                     <img src="/materials/logo.png" alt="Logo" height="40px">
-                    <h1 id="name">HostingX</h1>
+                    <h1 id="name">HostingSnap</h1>
                 </div>
                 <div class="bottom">
-                    <span>© 2022 HostingX</span>
+                    <span>© 2022 HostingSnap</span>
                 </div>
             </div>
             <div class="right">
@@ -72,6 +88,7 @@
         </div>
 
     </footer>
+
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/dbe8e1aeca.js" crossorigin="anonymous"></script>
 </body>

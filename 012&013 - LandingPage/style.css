@@ -576,7 +576,7 @@ footer .content .right div a {
     justify-content: center;
     flex-direction: column;
     width: 100vw;
-    height: 61vh;
+    height: 63vh;
     background-color: white;
     margin: 35px 0px;
   }
@@ -610,6 +610,8 @@ footer .content .right div a {
   }
   .why .steps .step1 .right img {
     margin: 20px 0px;
+    max-width: 100%;
+    width: auto;
   }
   .why .steps .step2 {
     justify-content: center;
@@ -621,6 +623,8 @@ footer .content .right div a {
   }
   .why .steps .step2 .left img {
     margin: 20px 0px;
+    max-width: 100%;
+    width: auto;
   }
   .why .steps .step3 {
     justify-content: center;
@@ -632,6 +636,8 @@ footer .content .right div a {
   }
   .why .steps .step3 .right img {
     margin: 20px 0px;
+    max-width: 100%;
+    width: auto;
   }
   .services .cards {
     flex-direction: column;
@@ -639,7 +645,7 @@ footer .content .right div a {
   }
   .services .cards .card {
     margin: 10px 10px;
-    width: 360px;
+    width: 340px;
   }
   .domainSection .takeDomainName input {
     width: 300px;
@@ -650,7 +656,11 @@ footer .content .right div a {
   footer {
     padding: 25px 30px;
   }
+  footer .right{
+    margin: 0px 20px;
+  }
   footer .content {
-    justify-content: space-around;
+    text-align: center;
+    justify-content: center;
   }
 }

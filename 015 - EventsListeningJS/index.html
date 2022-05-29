@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events listening in JavaScript</title>
+</head>
+
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    #btn {
+        height: 30px;
+        width: 180px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        background-color: rgb(240, 233, 233);
+        transition: all 0.3s;
+        margin: 10px 0px;
+    }
+
+    #btn:hover {
+        background-color: rgb(206, 198, 198);
+        transform: scale(1.1);
+    }
+    #box{
+        height: 200px;
+        width: 300px;
+        border: 3px solid black;
+        background-color: red;
+        font-size: 40px;
+        color: white;
+        font-weight: bold;
+        margin: 40px 0px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">This is paragraph</p>
+        <button id="btn" onclick="toggleHide()">Hide this para!</button>
+        <hr>
+        <div id="box">Hover me once!</div>
+    </div>
+
+    <script>
+
+        // Event : It is a signal of touch in simple word! And browser listen your event and according to your event, the browser response
+
+        /*
+        Some Events :
+
+        1 ) click : When you clicks
+        2 ) contextmenu : When you right click
+        3 ) mouseover / mouseout
+        4 ) mouseup / mousedown
+        5 ) mousemove
+
+        some form events
+
+        1 ) Submit
+        2 ) Focus
+        
+        - DOMContentLoaded
+        - transitionend
+        */
+
+        // hide() function
+        function toggleHide() {
+
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if (para.style.display == 'block') {
+                para.style.display = 'none';
+                btn.textContent = "Show me para!"
+            } else {
+                para.style.display = 'block';
+                btn.textContent = "Hide this para!"
+            }
+
+        }
+
+        // Let's try mouse events on box
+        let box = document.getElementById('box');
+
+        box.addEventListener('mouseover', () => {
+            alert("Your cursor is in Danger Zone!")
+        })
+        box.addEventListener('mouseout', () => {
+            alert("Now, your cursor is in Safe Zone!")
+        })
+
+        
+    </script>
+</body>
+
+</html>
