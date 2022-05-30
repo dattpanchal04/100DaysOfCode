@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Manipulation in JavaScript</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .box{
+        display: grid;
+        place-content: center;
+        border: 2px solid gray;
+        border-radius: 10px;
+        height: 200px;
+        width: 300px;
+        margin: 10px 10px;
+    }
+    button{
+        height: 40px;
+        width: 150px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 40px;
+        margin: 10px 0px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    button:hover{
+        background-color: gray;
+        color: white;
+    }
+</style>
+<body>
+    <div class="container">
+        <span>This is span, which will remove!</span>
+        <div class="box" id="box">My Box</div>
+    </div>
+    <div class="container">
+        <a href="https://google.com"><button>Go to Google!</button></a>
+        <button id="disableBtn" onclick="disable()">Disabled me please!</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
