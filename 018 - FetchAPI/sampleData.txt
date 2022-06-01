@@ -1,0 +1,1 @@
+This is a sample data which is fetch by fetch API!
