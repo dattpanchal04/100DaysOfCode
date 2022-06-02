@@ -3,6 +3,7 @@
 
 Hi dear, I am just started to doing 100 Days of Code Challenge. The 100 Days of Code is a coding challenge created by Alexander Kallaway to encourage people to learn new coding skills. The challenge follows one simple rule: Code for at least an hour each day for 100 consecutive days. I will publish my 100 days of code regularly on GitHub and also sharing what i am learning with you. Thank you :)
 
+![100DaysOfCode](https://user-images.githubusercontent.com/94067118/171685844-b180d7ea-b892-4675-aa6e-86f4b45f2df7.png)
 
 ## Authors
 
