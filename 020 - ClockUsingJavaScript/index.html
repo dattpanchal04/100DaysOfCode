@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock using JavaScript</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Ubuntu:wght@400;500&display=swap');
+
+    body {
+        background-image: radial-gradient(circle 610px at 5.2% 51.6%, rgba(5, 8, 114, 1) 0%, rgba(7, 3, 53, 1) 97.5%);
+        /* font-family: 'Kdam Thmor Pro', sans-serif; */
+        font-family: 'Ubuntu', sans-serif;
+        height: 90vh;
+    }
+
+    .container {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #clock {
+        color: white;
+        font-weight: bold;
+        font-size: 60px;
+        margin: 20px 0px;
+    }
+
+    .quotes {
+        color: gray;
+        font-size: 20px;
+        margin: 0px 150px;
+        text-transform: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .quotes {
+            margin: 0px 20px;
+        }
+    }
+</style>
+
+<body onload="updateClock(); setInterval('updateClock(), 1000')">
+
+    <div class="container">
+        <div id="clock">
+            <div></div>
+        </div>
+        <div class="quotes">
+            <span id="span"><q>I'm waits for no one. You can never found me again! please invest me in the productive
+                    tasks, not in non-productive tasks. If you invest me in right place, i will definitely gives you
+                    huge success in your life!</q></span> <br>
+            <span>- Time</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
