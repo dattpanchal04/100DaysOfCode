@@ -1,0 +1,6 @@
+jQuery 
+------------------------------------------------------
+
+- It is very popular ( Write Less, Do More ) javascript library. You can used jQuery for your frontend projects.
+- It simplifies the javascript programming. And it helps in AJAX and DOM manipulation. 
+- You can download and install the jQuery from it's official website. 
